@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.95,maximum-scale=1.0,user-scalable=no">
+  <title>Ranjeet Kumar | Python Backend & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Ranjeet Kumar - Python Backend Developer, REST API Architect, and Full-Stack Software Engineer based in Jaipur, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Fira+Code:wght@400;700&amp;family=DM+Sans:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ============ INTRO OVERLAY ============ -->
+  <div class="lua-intro" id="luaIntro">
+    <div class="lua-intro-welcome">
+      <div class="lua-intro-title">Welcome to Ranjeet's Portfolio</div>
+      <div class="lua-intro-subtitle">Python Backend Developer • Full-Stack Engineer • API Architect</div>
+      <div class="lua-intro-notice">Click or press any key to skip intro animation.</div>
+    </div>
+    <div class="lua-intro-code" id="luaIntroCode">
+      <span class="lua-cm"># Loading Ranjeet's Python Backend Environment...</span>
+      <span class="lua-kw">import</span> <span class="lua-var">asyncio</span>
+      <span class="lua-kw">from</span> <span class="lua-var">typing</span> <span class="lua-kw">import</span> <span class="lua-var">List</span>, <span class="lua-var">Dict</span>
+
+      <span class="lua-kw">class</span> <span class="lua-fn">PythonBackendDeveloper</span>:
+          <span class="lua-kw">def</span> <span class="lua-fn">__init__</span>(<span class="lua-kw">self</span>):
+              <span class="lua-kw">self</span>.<span class="lua-var">name</span> = <span class="lua-str">"Ranjeet Kumar"</span>
+              <span class="lua-kw">self</span>.<span class="lua-var">role</span> = <span class="lua-str">"Python Backend & Full-Stack Engineer"</span>
+              <span class="lua-kw">self</span>.<span class="lua-var">core_stack</span> = [<span class="lua-str">"Python"</span>, <span class="lua-str">"REST APIs"</span>, <span class="lua-str">"PostgreSQL"</span>, <span class="lua-str">"MongoDB"</span>]
+
+          <span class="lua-kw">async def</span> <span class="lua-fn">initialize_system</span>(<span class="lua-kw">self</span>) -> <span class="lua-kw">bool</span>:
+              <span class="lua-fn">print</span>(<span class="lua-str">"Welcome to Ranjeet's Portfolio!"</span>)
+              <span class="lua-kw">await self</span>.<span class="lua-fn">load_backend_services</span>()
+              <span class="lua-kw">await self</span>.<span class="lua-fn">connect_databases</span>()
+              <span class="lua-kw">return True</span>
+
+      <span class="lua-var">asyncio</span>.<span class="lua-fn">run</span>(<span class="lua-var">PythonBackendDeveloper</span>().<span class="lua-fn">initialize_system</span>())<span class="lua-cursor"></span>
+    </div>
+    <div class="lua-intro-loading">
+      <div class="lua-loading-bar">
+        <div class="lua-loading-fill" id="luaLoadingFill" style="width: 0%;"></div>
+      </div>
+      <div class="lua-loading-text">Initializing Python environment...</div>
+    </div>
+    <div class="lua-intro-skip" id="luaSkip">Press any key or click to skip</div>
+    <div class="lua-intro-flash"></div>
+  </div>
+
+  <!-- FLOATING CODE SNIPPETS -->
+  <div class="lua-float lua-float-1">import asyncio, sys, os, requests</div>
+  <div class="lua-float lua-float-2">from fastapi import FastAPI, Depends, HTTPException</div>
+  <div class="lua-float lua-float-3">class UserAccount(BaseModel):</div>
+  <div class="lua-float lua-float-4">@app.get('/api/v1/data')</div>
+  <div class="lua-float lua-float-5">docker-compose up -d --build backend-api</div>
+  <div class="lua-float lua-float-6">const { Component } = owl; class OdooComponent extends Component {}</div>
+  <div class="lua-float lua-float-7">&lt;xpath expr="//field[@name='partner_id']" position="after"&gt;</div>
+  <div class="lua-float lua-float-8">&lt;t t-name="custom_qweb_report"&gt;QWeb PDF Report Layout&lt;/t&gt;</div>
+  <div class="lua-float lua-float-9">display: flex; justify-content: space-between; font-family: 'Fira Code';</div>
+  <div class="lua-float lua-float-10">git commit -m "Feat: Python Backend &amp; JavaScript OWL Integration"</div>
+  <div class="lua-float lua-float-11">def process_video_stream(upload_file):</div>
+  <div class="lua-float lua-float-12">pytest tests/test_backend_api.py --cov=app</div>
+  <div class="lua-float lua-float-13">Async Web Framework &amp; High-Throughput REST APIs</div>
+  <div class="lua-float lua-float-14">Cloudinary API Video &amp; Image Storage Connected</div>
+  <div class="lua-float lua-float-15">def calculate_metrics(df): return df.describe()</div>
+  <div class="lua-float lua-float-16">Arya College of Eng &amp; IT (9.41 CGPA)</div>
+  <div class="lua-float lua-float-17">PostgreSQL Query &amp; Index Optimization</div>
+  <div class="lua-float lua-float-18">RESTful &amp; Webhook Microservices</div>
+  <div class="lua-float lua-float-19"># Scalable Python Backend Architecture</div>
+  <div class="lua-float lua-float-20">if response.status_code == 200: return response.json()</div>
+
+  <canvas id="bgCanvas"></canvas>
+  <div class="bg-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="mouse-glow" id="mouseGlow"></div>
+
+  <!-- ============ LIGHTBOX FULLSCREEN VIEWER ============ -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <button class="lightbox-close" id="lbClose" aria-label="Close (Esc)" title="Close (Esc)">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous (←)" title="Previous (←)">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Next (→)" title="Next (→)">›</button>
+    <div class="lightbox-counter" id="lbCounter">1 / 1</div>
+    <div class="lightbox-container">
+      <div class="lightbox-content" id="lbContent">
+        <div class="lightbox-loading" id="lbLoading"></div>
+      </div>
+    </div>
+    <div class="lightbox-caption" id="lbCaption"></div>
+    <div class="lightbox-hint">ESC: Close · ← →: Navigate · Click image: Zoom</div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="topnav">
+    <div class="wrap">
+      <div class="nav-in">
+        <a href="#top" class="brand">
+          <div>
+            <div class="brand-name">RANJEET KUMAR</div>
+            <div class="brand-tag">PYTHON BACKEND DEVELOPER</div>
+            <div class="brand-tagline">Scalable Software Architecture</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#stats">Stats</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a class="btn btn-neon nav-discord-btn" href="Ranjeet_Resume_2026.docx.pdf" target="_blank" id="downloadCVNav">
+            📄 Resume PDF
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobilemenu">
+        <a href="#stats">Stats</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="rel" id="top">
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-status hero-status-el reveal rv-l vis">
+              <span class="pulse-dot"></span>Open for Python Backend &amp; Full-Stack Projects
+            </div>
+            <h1 class="reveal rv-b vis" style="transition-delay:.05s">
+              HIGH-PERFORMANCE <span class="neon-text" data-text="PYTHON">PYTHON</span><br>
+              BACKENDS &amp; <span class="amber-text">APIs</span>
+            </h1>
+            <p class="hero-tagline reveal rv-b" style="transition-delay:.08s">
+              Python Developer | RESTful APIs | Full-Stack Systems Architect
+            </p>
+            <p class="hero-desc reveal rv-b" style="transition-delay:.1s">
+              Backend Software Engineer passionate about creating software solutions that are scalable, efficient, and user-focused. Specialized in core Python engineering, JavaScript (OWL framework), XML &amp; QWeb view design, HTML5/CSS3 layouts, high-throughput REST APIs, and database architecture (PostgreSQL, MongoDB).
+            </p>
+            <div class="hero-trust-split reveal rv-b" style="transition-delay:.12s">
+              <div class="hero-mini-card">
+                <div class="hero-mini-stat"><span class="hms-num">9.41</span><span class="hms-lbl">B.Tech CGPA</span></div>
+                <div class="hero-mini-divider"></div>
+                <div class="hero-mini-stat"><span class="hms-num">Python</span><span class="hms-lbl">Core Stack</span></div>
+                <div class="hero-mini-divider"></div>
+                <div class="hero-mini-stat"><span class="hms-num">100%</span><span class="hms-lbl">Clean Code</span></div>
+              </div>
+              <div class="trust-row">
+                <div class="trust-item"><span class="trust-icon">🐍</span><span>Python Developer</span></div>
+                <div class="trust-item"><span class="trust-icon">🛡</span><span>Clean &amp; Scalable Architecture</span></div>
+                <div class="trust-item"><span class="trust-icon">⏱</span><span>On-Time Delivery</span></div>
+              </div>
+            </div>
+            <div class="hero-actions reveal rv-b" style="transition-delay:.15s">
+              <a class="btn btn-neon" href="#projects">▶ View Projects</a>
+              <a class="btn btn-amber" href="Ranjeet_Resume_2026.docx.pdf" target="_blank" id="downloadCV">
+                📄 Download Resume PDF
+              </a>
+            </div>
+            <div class="reveal rv-l" style="transition-delay:.2s">
+              <div class="terminal">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-text" id="typedText">python main.py --host 0.0.0.0 --port 8000</span>
+                <span class="terminal-caret"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HERO PROFILE CARD -->
+          <div class="hero-profile reveal rv-r vis" style="transition-delay:.1s">
+            <div class="profile-card">
+              <div class="top-line"></div>
+              <div class="profile-avatar-wrap">
+                <div class="profile-avatar"><img src="ranjeet_avatar.png" alt="Ranjeet Kumar Avatar"></div>
+                <div class="profile-ring"></div>
+                <div class="profile-status-dot"></div>
+              </div>
+              <div class="profile-card-info">
+                <div class="profile-name">Ranjeet Kumar</div>
+                <div class="profile-handle">@rawalranjeet</div>
+                <div class="profile-roles">
+                  <div class="role-tag role-scripter"><span class="role-icon">🐍</span>Python Developer</div>
+                  <div class="role-tag role-lua"><span class="role-icon">⚡</span>Backend Engineer</div>
+                  <div class="role-tag role-ui"><span class="role-icon">🔌</span>API &amp; System Eng.</div>
+                </div>
+                <div class="profile-stats-row">
+                  <div class="profile-stat"><span class="profile-stat-num">9.41</span><span class="profile-stat-lbl">CGPA</span></div>
+                  <div class="profile-stat-divider"></div>
+                  <div class="profile-stat"><span class="profile-stat-num">Python</span><span class="profile-stat-lbl">Expert</span></div>
+                  <div class="profile-stat-divider"></div>
+                  <div class="profile-stat"><span class="profile-stat-num">100%</span><span class="profile-stat-lbl">Reliability</span></div>
+                </div>
+                <a class="btn btn-neon" href="#contact" style="margin-top:10px;width:100%;justify-content:center">
+                  ✉ Let's Work Together
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HERO SECONDARY CARD -->
+          <div class="hero-roblox-img reveal rv-r vis" style="transition-delay:.18s">
+            <div class="roblox-img-card">
+              <div class="top-line"></div>
+              <div class="roblox-img-area" style="cursor: zoom-in;">
+                <img src="project_youtube.png" alt="Python Backend Systems Architecture" style="cursor: zoom-in;">
+                <div class="zoom-icon-overlay">🔍</div>
+                <div class="roblox-img-glow"></div>
+                <div class="roblox-img-floor"></div>
+              </div>
+              <div class="roblox-img-label">
+                <span class="badge badge-neon"><span class="badge-dot"></span>Python Backend Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS SECTION ============ -->
+    <section class="stats-section" id="stats">
+      <div class="wrap">
+        <div class="stats-header">
+          <div class="sec-label reveal rv-l">// Key Highlights</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Engineering Excellence &amp; Academic Distinction.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s;margin-left:auto;margin-right:auto;text-align:center">
+            Top academic background, full-stack Python backends, and production API delivery.
+          </p>
+        </div>
+        <div class="stats-marquee reveal rv-b" style="transition-delay:.1s">
+          <span>PYTHON BACKEND ENGINEERING · JAVASCRIPT &amp; OWL · XML &amp; QWeb VIEWS · HTML5 &amp; CSS3 DESIGN · RESTFUL APIs · POSTGRESQL &amp; MONGODB · FULL-STACK DEVELOPMENT · DOCKER CONTAINERIZATION · </span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal rv-b" style="transition-delay:.04s">
+            <div class="stat-card-icon">🎓</div>
+            <div class="stat-number neon-num"><span class="counter" data-target="9.41" data-decimal="2">0</span></div>
+            <div class="stat-card-label">B.Tech IT CGPA</div>
+            <div class="stat-card-sub">Arya College Of Engineering &amp; I.T., Jaipur</div>
+            <div class="stat-bar"><div class="stat-bar-fill neon-bar"></div></div>
+          </div>
+          <div class="stat-card reveal rv-b" style="transition-delay:.08s">
+            <div class="stat-card-icon">💼</div>
+            <div class="stat-number neon-num"><span class="counter" data-target="1.5" data-decimal="1" data-suffix="+">0</span></div>
+            <div class="stat-card-label">Years Experience</div>
+            <div class="stat-card-sub">Software Engineering &amp; Data Science Internships</div>
+            <div class="stat-bar"><div class="stat-bar-fill neon-bar"></div></div>
+          </div>
+          <div class="stat-card reveal rv-b" style="transition-delay:.12s">
+            <div class="stat-card-icon amber-icon">🔌</div>
+            <div class="stat-number amber-num"><span class="counter" data-target="5" data-suffix="+">0</span></div>
+            <div class="stat-card-label">Major API Integrations</div>
+            <div class="stat-card-sub">Shopify, Magento, Stripe, Tap Payment, Grubtech POS</div>
+            <div class="stat-bar"><div class="stat-bar-fill amber-bar"></div></div>
+            <div class="stat-live"><span class="stat-live-dot"></span>Production Ready</div>
+          </div>
+          <div class="stat-card reveal rv-b" style="transition-delay:.16s">
+            <div class="stat-card-icon amber-icon">⭐</div>
+            <div class="stat-number amber-num"><span class="counter" data-target="93.6" data-suffix="%" data-decimal="1">0</span></div>
+            <div class="stat-card-label">Senior Secondary Score</div>
+            <div class="stat-card-sub">Sarvayog International School (Class XII)</div>
+            <div class="stat-bar"><div class="stat-bar-fill amber-bar"></div></div>
+          </div>
+          <div class="stat-card reveal rv-b" style="transition-delay:.20s">
+            <div class="stat-card-icon">⚡</div>
+            <div class="stat-number neon-num"><span class="counter" data-target="99.8" data-suffix="%" data-decimal="1">0</span></div>
+            <div class="stat-card-label">API Reliability &amp; Quality</div>
+            <div class="stat-card-sub">Clean code, responsive communication &amp; fast delivery</div>
+            <div class="stat-bar"><div class="stat-bar-fill neon-bar"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT & WORKFLOW SECTION ============ -->
+    <section id="about">
+      <div class="wrap">
+        <div style="margin-bottom:32px">
+          <div class="sec-label reveal rv-l">// Engineering Philosophy</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Structured, Maintainable &amp; Scalable Python Code.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s">
+            I specialize in analyzing system requirements, designing clean database schemas, building secure RESTful APIs, and deploying maintainable backend services:
+          </p>
+        </div>
+        <div class="process-layout">
+          <div class="process-flow">
+            <div class="process-step reveal rv-b">
+              <div class="process-step-header">
+                <div class="process-num">01</div>
+                <div class="process-arrow-line"></div>
+              </div>
+              <div class="card card-accent">
+                <div class="process-who process-who-client">Phase 1</div>
+                <div class="process-card-inner">
+                  <div class="process-card-main">
+                    <div class="card-icon">📋</div>
+                    <h3>Requirement Analysis &amp; Architecture Design</h3>
+                    <p>Understanding client needs, planning clean RESTful API endpoint contracts, and designing efficient data models (PostgreSQL, MongoDB).</p>
+                    <div class="process-checklist">
+                      <div class="process-checklist-inner">
+                        <div class="process-checklist-left">
+                          <div class="process-check-title">Focus Areas:</div>
+                          <div class="process-check-item"><span class="pc-icon">🐍</span>Python Backend Logic Architecture</div>
+                          <div class="process-check-item"><span class="pc-icon">🔌</span>API Schema Specifications</div>
+                          <div class="process-check-item"><span class="pc-icon">🗄️</span>Database Schema &amp; Index Planning</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step reveal rv-b" style="transition-delay:.08s">
+              <div class="process-step-header">
+                <div class="process-num">02</div>
+                <div class="process-arrow-line"></div>
+              </div>
+              <div class="card">
+                <div class="process-who process-who-me">Phase 2</div>
+                <div class="process-card-inner">
+                  <div class="process-card-main">
+                    <div class="card-icon">📝</div>
+                    <h3>Python &amp; API Development</h3>
+                    <p>Building high-performance backend modules in Python, processing data pipelines, integrating webhooks, and connecting third-party services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step reveal rv-b" style="transition-delay:.16s">
+              <div class="process-step-header">
+                <div class="process-num">03</div>
+                <div class="process-arrow-line"></div>
+              </div>
+              <div class="card">
+                <div class="process-who process-who-both">Phase 3</div>
+                <div class="process-card-inner">
+                  <div class="process-card-main">
+                    <div class="card-icon">🧪</div>
+                    <h3>Testing &amp; Optimization</h3>
+                    <p>Unit testing API endpoints, validating database query efficiency, rate limiting, and ensuring bulletproof error handling.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step reveal rv-b" style="transition-delay:.24s">
+              <div class="process-step-header">
+                <div class="process-num">04</div>
+                <div class="process-arrow-line" style="opacity:0"></div>
+              </div>
+              <div class="card">
+                <div class="process-who process-who-me">Phase 4</div>
+                <div class="process-card-inner">
+                  <div class="process-card-main">
+                    <div class="card-icon">🚀</div>
+                    <h3>Deployment &amp; Handover</h3>
+                    <p>Deploying application stacks via Docker containers, setting up Linux server environments, providing clear documentation, and post-launch support.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-images">
+            <div class="process-img-card reveal rv-r">
+              <div class="process-img-thumb" style="cursor: zoom-in;">
+                <img src="project_youtube.png" alt="Python Backend Engineering" style="cursor: zoom-in;">
+                <div class="zoom-icon-overlay">🔍</div>
+              </div>
+              <div class="process-img-label">01 — Python Backend Systems</div>
+            </div>
+            <div class="process-img-card reveal rv-r" style="transition-delay:.06s">
+              <div class="process-img-thumb" style="cursor: zoom-in;">
+                <img src="project_ai.png" alt="Full-Stack Web & AI Platforms" style="cursor: zoom-in;">
+                <div class="zoom-icon-overlay">🔍</div>
+              </div>
+              <div class="process-img-label">02 — AI &amp; Full-Stack Platforms</div>
+            </div>
+            <div class="process-img-card reveal rv-r" style="transition-delay:.12s">
+              <div class="process-img-thumb" style="cursor: zoom-in;">
+                <img src="project_odoo.png" alt="API Integration Architecture" style="cursor: zoom-in;">
+                <div class="zoom-icon-overlay">🔍</div>
+              </div>
+              <div class="process-img-label">03 — Third-Party API Sync</div>
+            </div>
+            <div class="process-img-card reveal rv-r" style="transition-delay:.18s">
+              <div class="process-img-thumb" style="cursor: zoom-in;">
+                <img src="project_rhcsa.png" alt="DevOps & Server Deployment" style="cursor: zoom-in;">
+                <div class="zoom-icon-overlay">🔍</div>
+              </div>
+              <div class="process-img-label">04 — Docker &amp; Linux DevOps</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE & EDUCATION SECTION ============ -->
+    <section id="experience">
+      <div class="wrap">
+        <div style="margin-bottom:32px">
+          <div class="sec-label reveal rv-l">// Experience &amp; Education</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Work History &amp; Academic Background.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s">Professional software engineering experience, internships, and educational qualifications.</p>
+        </div>
+
+        <div class="port-grid">
+          <!-- WORK EXPERIENCE 1 -->
+          <div class="port-item span6 reveal rv-l">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_odoo.png" alt="CodeTrade India Software Engineer">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <span class="badge badge-neon">Present Position</span>
+              <h4 style="margin-top:8px">Software Engineer — CodeTrade India Pvt. Ltd.</h4>
+              <p style="color:var(--amber);font-size:13px;font-weight:600">Jaipur, India | May 19, 2025 – Present</p>
+              <ul class="port-features">
+                <li>Develop and customize Odoo applications using Python to meet specific business needs.</li>
+                <li>Integrate third-party systems like Shopify, Magento, Stripe, Tap Payment, and Grubtech POS using APIs.</li>
+                <li>Analyze client requirements and implement effective, tailored software solutions.</li>
+                <li>Build custom Python ORM logic, backend API hooks, XML views, and report layouts.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Odoo ERP</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Shopify</span>
+                <span class="tag">Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- WORK EXPERIENCE 2 -->
+          <div class="port-item span6 reveal rv-r">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_ai.png" alt="Celebal Technologies Internship">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <span class="badge badge-amber">Internship</span>
+              <h4 style="margin-top:8px">Data Science Intern — Celebal Technologies</h4>
+              <p style="color:var(--amber);font-size:13px;font-weight:600">Jaipur, India | Jun 03, 2024 – Aug 03, 2024</p>
+              <ul class="port-features">
+                <li>Completed an intensive internship program under the Data Science domain.</li>
+                <li>Gained hands-on experience in data modeling, exploratory data analysis, and predictive scripting.</li>
+                <li>Demonstrated diligence and problem-solving skills throughout the internship program.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Data Science</span>
+                <span class="tag">Python</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCATION CARD 1 -->
+          <div class="port-item span6 reveal rv-l" style="transition-delay:.06s">
+            <div class="port-body">
+              <span class="badge badge-neon">Graduation (2021 – 2025)</span>
+              <h4 style="margin-top:8px">B.Tech in Information Technology</h4>
+              <p style="color:var(--neon);font-weight:700;font-size:14px">Arya College Of Engineering &amp; I.T., Jaipur | CGPA: 9.41 / 10</p>
+              <p style="color:var(--tx2);font-size:13px;margin-top:8px">
+                Comprehensive study of Software Engineering, Database Systems, Computer Networks, Data Structures, Web Technologies, and Information Technology fundamentals.
+              </p>
+              <div class="tag-row">
+                <span class="tag">B.Tech IT</span>
+                <span class="tag">9.41 CGPA</span>
+                <span class="tag">Software Eng.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCATION CARD 2 -->
+          <div class="port-item span6 reveal rv-r" style="transition-delay:.12s">
+            <div class="port-body">
+              <span class="badge badge-amber">Schooling Excellence</span>
+              <h4 style="margin-top:8px">Sarvayog International School</h4>
+              <p style="color:var(--amber);font-weight:700;font-size:14px">Senior Secondary (Class XII): 93.60% (2021) | Secondary (Class X): 80.50% (2019)</p>
+              <p style="color:var(--tx2);font-size:13px;margin-top:8px">
+                Demonstrated top academic distinction in Science and Mathematics during Senior Secondary education.
+              </p>
+              <div class="tag-row">
+                <span class="tag">93.60% XII</span>
+                <span class="tag">80.50% X</span>
+                <span class="tag">Distinction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SHOWCASE SECTION ============ -->
+    <section id="projects">
+      <div class="wrap">
+        <div style="margin-bottom:32px">
+          <div class="sec-label reveal rv-l">// Project Portfolio</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Featured Applications &amp; Projects.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s">Explore major software projects across Python backend engineering, full-stack web platforms, AI models, and API integrations.</p>
+        </div>
+        <div class="port-grid">
+
+          <!-- PROJECT 1 -->
+          <div class="port-item span6 reveal rv-b">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_youtube.png" alt="YouTube Backend Architecture">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <h4>YouTube Full-Backend Platform</h4>
+              <ul class="port-features">
+                <li>Engineered complete backend architecture supporting user accounts, channels, and user profiles.</li>
+                <li>Implemented video upload pipelines, thumbnail generation, publishing status, and likes/dislikes.</li>
+                <li>Connected MongoDB database and Cloudinary for high-throughput video/image asset storage.</li>
+                <li>Built secure RESTful endpoints with robust input validation and authorization.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Cloudinary</span>
+                <span class="tag">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="port-item span6 reveal rv-b" style="transition-delay:.06s">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_ai.png" alt="AI Image Generation Platform">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <h4>AI Image Generation Platform</h4>
+              <ul class="port-features">
+                <li>Created a full-stack website allowing users to generate images from text prompts using Hugging Face AI models.</li>
+                <li>Managed real-time AI image generation pipelines and stored output assets with Cloudinary.</li>
+                <li>Provided user dashboard to view, save, and download generated high-resolution images.</li>
+                <li>Optimized front-end responsiveness and backend API request handling.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Full-Stack</span>
+                <span class="tag">Python</span>
+                <span class="tag">Hugging Face API</span>
+                <span class="tag">Cloudinary</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="port-item span6 reveal rv-b" style="transition-delay:.12s">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_odoo.png" alt="Multi-Platform E-commerce & Payment Integration">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <h4>Multi-Platform E-Commerce &amp; Payment API Integrations</h4>
+              <ul class="port-features">
+                <li>Integrate third-party e-commerce platforms (Shopify, Magento) via REST APIs.</li>
+                <li>Connect payment gateways (Stripe, Tap Payment) and Grubtech POS systems.</li>
+                <li>Develop custom automated webhook handlers and real-time data sync modules.</li>
+                <li>Streamline multi-channel order processing and inventory synchronization.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Shopify</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="port-item span6 reveal rv-b" style="transition-delay:.18s">
+            <div class="port-media img-loaded" style="cursor: zoom-in;">
+              <img class="port-img loaded" src="project_rhcsa.png" alt="Containerized Server Deployment Pipeline">
+              <div class="zoom-icon-overlay">🔍</div>
+            </div>
+            <div class="port-body">
+              <h4>Containerized DevOps &amp; Server Infrastructure</h4>
+              <ul class="port-features">
+                <li>Linux / Ubuntu server administration and security hardening.</li>
+                <li>Docker containerization for Python application servers and PostgreSQL / MongoDB database clusters.</li>
+                <li>Shell scripting and automated deployment pipelines for server environments.</li>
+                <li>Red Hat Certified System Administrator background (RHCSA).</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Linux/Ubuntu</span>
+                <span class="tag">Docker</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS & CERTIFICATIONS SECTION ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <div style="margin-bottom:32px">
+          <div class="sec-label reveal rv-l">// Technical Stack</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Skills &amp; Certifications.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s">Core tech stack, engineering tools, and professional certifications.</p>
+        </div>
+
+        <div class="games-layout">
+          <div class="games-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); flex: 1;">
+            
+            <div class="card card-accent reveal rv-l">
+              <span class="badge badge-neon">Core Engineering</span>
+              <h3 style="margin-top:14px">Technical Skills</h3>
+              <ul class="deliver-list">
+                <li><span class="deliver-check">✓</span><strong>Primary Language:</strong> Python (OOP &amp; Backend Logic)</li>
+                <li><span class="deliver-check">✓</span><strong>Frontend &amp; UI:</strong> JavaScript (OWL Framework), HTML5 &amp; CSS3 Styling</li>
+                <li><span class="deliver-check">✓</span><strong>Views &amp; Templating:</strong> XML Views, QWeb Reports, Odoo Studio</li>
+                <li><span class="deliver-check">✓</span><strong>APIs:</strong> RESTful APIs, XML-RPC, Webhooks Integration</li>
+                <li><span class="deliver-check">✓</span><strong>Databases:</strong> PostgreSQL, MongoDB, Cloudinary API</li>
+              </ul>
+            </div>
+
+            <div class="card reveal rv-b" style="transition-delay:.08s">
+              <span class="badge badge-amber">DevOps &amp; Tools</span>
+              <h3 style="margin-top:14px">Tools &amp; Platforms</h3>
+              <ul class="deliver-list">
+                <li><span class="deliver-check">✓</span><strong>OS &amp; Environment:</strong> Linux / Ubuntu, RHEL</li>
+                <li><span class="deliver-check">✓</span><strong>DevOps:</strong> Docker, Git / GitHub</li>
+                <li><span class="deliver-check">✓</span><strong>IDE &amp; Testing:</strong> VS Code, Postman, Pytest</li>
+                <li><span class="deliver-check">✓</span><strong>Integrations:</strong> Shopify, Magento, Stripe, Tap Payment, Grubtech POS</li>
+              </ul>
+            </div>
+
+            <div class="card reveal rv-r" style="transition-delay:.16s">
+              <span class="badge badge-neon">Accreditations</span>
+              <h3 style="margin-top:14px">Certifications &amp; Expo</h3>
+              <ul class="deliver-list">
+                <li><span class="deliver-check">✓</span><strong>RHCSA:</strong> Red Hat Certified System Administrator (May'23, ID: 230-089-310)</li>
+                <li><span class="deliver-check">✓</span><strong>Hackathon:</strong> Great India Hackfest, JKLU (2024)</li>
+                <li><span class="deliver-check">✓</span><strong>Startup Expo:</strong> E-cell Startup Expo (2024)</li>
+                <li><span class="deliver-check">✓</span><strong>NPTEL:</strong> Cloud Computing Certification (2024)</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact">
+      <div class="wrap">
+        <div style="margin-bottom:32px">
+          <div class="sec-label reveal rv-l">// Contact</div>
+          <h2 class="sec-title reveal rv-b" style="transition-delay:.04s">Get In Touch.</h2>
+          <p class="sec-desc reveal rv-b" style="transition-delay:.08s">Send an email inquiry, connect on LinkedIn/GitHub, or copy my contact details directly.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card card-accent reveal rv-l">
+            <span class="badge badge-neon"><span class="badge-dot"></span>Send an Inquiry</span>
+            <form id="contactForm" style="margin-top:18px">
+              <div class="form-group"><label>Name</label><input id="fname" placeholder="Your name" required=""></div>
+              <div class="form-group"><label>Email</label><input id="femail" type="email" placeholder="you@example.com" required=""></div>
+              <div class="form-group"><label>Message</label><textarea id="fmsg" placeholder="Describe your project, API requirement, or job opportunity..." required=""></textarea></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button class="btn btn-neon" type="submit">✉ Send Email</button>
+                <button class="btn" type="button" id="copyEmail">📋 Copy Email</button>
+              </div>
+              <p style="color:var(--tx3);font-size:12px;margin-top:10px;line-height:1.5">Feel free to ask any questions about Python backend engineering or API development!</p>
+            </form>
+          </div>
+          
+          <div class="card reveal rv-r" style="transition-delay:.06s">
+            <span class="badge badge-amber"><span class="badge-dot"></span>Contact Details</span>
+            <div style="margin-top:18px">
+              <div class="ci-item">
+                <div class="ci-icon">✉</div>
+                <div>
+                  <div class="ci-label">EMAIL</div>
+                  <div class="ci-value" id="emailText">rawalranjeet765@gmail.com</div>
+                </div>
+              </div>
+              <div class="ci-item">
+                <div class="ci-icon">📞</div>
+                <div>
+                  <div class="ci-label">PHONE</div>
+                  <div class="ci-value">+91-8955744874</div>
+                </div>
+              </div>
+              <div class="ci-item">
+                <div class="ci-icon">📍</div>
+                <div>
+                  <div class="ci-label">LOCATION</div>
+                  <div class="ci-value">Jaipur, Rajasthan, India</div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">
+              <a class="btn" href="https://www.linkedin.com/in/ranjeet-kumar-5b2940258" target="_blank" id="lnk">LinkedIn</a>
+              <a class="btn" href="https://github.com/rawalranjeet" target="_blank" id="ghb">GitHub</a>
+              <a class="btn btn-neon" href="Ranjeet_Resume_2026.docx.pdf" target="_blank">Download Resume PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-inner">
+          <div class="footer-copy">© <span id="year">2026</span> <strong style="color:var(--tx2)">Ranjeet Kumar</strong> - Python Backend Developer</div>
+          <div style="display:flex;gap:18px">
+            <a href="#stats">Stats</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
