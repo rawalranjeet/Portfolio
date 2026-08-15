@@ -663,8 +663,8 @@ section {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.1fr .45fr 1.6fr;
-    gap: clamp(14px, 2vw, 28px);
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: clamp(24px, 3vw, 48px);
     align-items: center
 }
 
@@ -938,15 +938,25 @@ section {
     opacity: .6
 }
 
+/* Hero Profile Card Alignment & Styling */
 .profile-card {
-    border-radius: clamp(12px, 1.2vw, 18px);
+    border-radius: clamp(14px, 1.5vw, 20px);
     border: 1px solid var(--line);
     background: var(--s1);
-    padding: clamp(16px, 1.8vw, 28px) clamp(14px, 1.5vw, 22px);
+    padding: clamp(22px, 2.5vw, 32px) clamp(18px, 2vw, 26px);
     position: relative;
     overflow: hidden;
     text-align: center;
-    width: 100%
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.2s, box-shadow 0.2s
+}
+
+.profile-card:hover {
+    border-color: rgba(45, 255, 110, 0.2);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5), 0 0 20px rgba(45, 255, 110, 0.05)
 }
 
 .profile-card .top-line {
@@ -956,19 +966,19 @@ section {
     right: 0;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--neon), var(--amber), transparent);
-    opacity: .6
+    opacity: 0.7
 }
 
 .profile-avatar-wrap {
     position: relative;
-    width: clamp(60px, 6.5vw, 100px);
-    height: clamp(60px, 6.5vw, 100px);
-    margin: 8px auto clamp(8px, 1vw, 14px)
+    width: clamp(75px, 7vw, 96px);
+    height: clamp(75px, 7vw, 96px);
+    margin: 0 auto clamp(12px, 1.2vw, 16px)
 }
 
 .profile-avatar {
-    width: clamp(60px, 6.5vw, 100px);
-    height: clamp(60px, 6.5vw, 100px);
+    width: clamp(75px, 7vw, 96px);
+    height: clamp(75px, 7vw, 96px);
     border-radius: 50%;
     overflow: hidden;
     background: linear-gradient(135deg, var(--s2), var(--s3));
@@ -982,7 +992,8 @@ section {
 .profile-avatar img {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+    object-position: center 18%
 }
 
 .profile-ring {
@@ -1011,52 +1022,53 @@ section {
 
 .profile-status-dot {
     position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: clamp(12px, 1vw, 16px);
-    height: clamp(12px, 1vw, 16px);
+    bottom: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: var(--neon);
     border: 3px solid var(--s1);
-    box-shadow: 0 0 10px rgba(45, 255, 110, .4);
-    z-index: 3;
+    box-shadow: 0 0 10px rgba(45, 255, 110, 0.6);
+    z-index: 4;
     animation: dp 2s ease-in-out infinite
 }
 
 .profile-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(16px, 1.6vw, 24px);
+    font-size: clamp(22px, 2vw, 28px);
     letter-spacing: 1.5px;
-    line-height: 1
+    line-height: 1;
+    margin-bottom: 3px
 }
 
 .profile-handle {
     font-family: 'Fira Code', monospace;
-    font-size: clamp(9px, 0.75vw, 11px);
+    font-size: clamp(10px, 0.8vw, 11.5px);
     color: var(--tx3);
-    margin-top: 3px;
-    letter-spacing: .5px
+    letter-spacing: 0.5px;
+    margin-bottom: clamp(14px, 1.5vw, 18px)
 }
 
 .profile-roles {
     display: flex;
     flex-direction: column;
-    gap: clamp(3px, 0.4vw, 5px);
-    margin-top: clamp(8px, 1vw, 14px)
+    gap: 8px;
+    margin-bottom: clamp(14px, 1.5vw, 18px)
 }
 
 .role-tag {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: clamp(4px, 0.5vw, 7px) clamp(8px, 0.8vw, 12px);
+    gap: 10px;
+    padding: 9px 14px;
     border-radius: 8px;
     border: 1px solid var(--line);
     background: var(--s2);
-    font-size: clamp(9px, 0.75vw, 11px);
-    font-weight: 700;
+    font-size: clamp(10.5px, 0.8vw, 12px);
+    font-weight: 600;
     color: var(--tx2);
-    transition: border-color .2s, color .2s, background .2s, transform .2s
+    transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.2s
 }
 
 .role-tag:hover {
@@ -1071,31 +1083,31 @@ section {
 }
 
 .role-scripter {
-    border-color: rgba(45, 255, 110, .15)
+    border-color: rgba(45, 255, 110, 0.15)
 }
 
 .role-scripter:hover {
-    border-color: rgba(45, 255, 110, .35);
+    border-color: rgba(45, 255, 110, 0.35);
     color: var(--neon);
     background: var(--neon2)
 }
 
 .role-lua {
-    border-color: rgba(59, 130, 246, .15)
+    border-color: rgba(59, 130, 246, 0.15)
 }
 
 .role-lua:hover {
-    border-color: rgba(59, 130, 246, .35);
+    border-color: rgba(59, 130, 246, 0.35);
     color: #3b82f6;
-    background: rgba(59, 130, 246, .08)
+    background: rgba(59, 130, 246, 0.08)
 }
 
 .role-ui {
-    border-color: rgba(255, 184, 48, .15)
+    border-color: rgba(255, 184, 48, 0.15)
 }
 
 .role-ui:hover {
-    border-color: rgba(255, 184, 48, .35);
+    border-color: rgba(255, 184, 48, 0.35);
     color: var(--amber);
     background: var(--amber2)
 }
@@ -1105,10 +1117,10 @@ section {
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin: clamp(8px, 1vw, 14px) 0 0;
-    padding: clamp(8px, 0.8vw, 12px) 0;
+    padding: 12px 0;
     border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line)
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 4px
 }
 
 .profile-stat {
@@ -1116,34 +1128,36 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px
+    gap: 3px
 }
 
 .profile-stat-num {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(14px, 1.3vw, 20px);
-    letter-spacing: .5px;
-    color: var(--neon)
+    font-size: clamp(16px, 1.4vw, 22px);
+    letter-spacing: 0.5px;
+    color: var(--neon);
+    line-height: 1
 }
 
 .profile-stat-lbl {
-    font-size: clamp(7px, 0.6vw, 9px);
+    font-size: clamp(8px, 0.65vw, 9.5px);
     color: var(--tx3);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     font-family: 'Fira Code', monospace
 }
 
 .profile-stat-divider {
     width: 1px;
-    height: clamp(18px, 1.8vw, 26px);
+    height: 22px;
     background: var(--line);
     flex-shrink: 0
 }
 
-.profile-card-info {
-    width: 100%
+.hero-profile {
+    display: flex;
+    align-items: center
 }
 
 .hero-roblox-img {
@@ -1176,7 +1190,7 @@ section {
 .roblox-img-area {
     width: 100%;
     aspect-ratio: 16/9;
-    background: linear-gradient(180deg, var(--s2) 0%, rgba(45, 255, 110, .02) 60%, var(--s1) 100%);
+    background: #0d1117;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1188,6 +1202,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     position: relative;
     z-index: 2
 }
@@ -1472,72 +1487,14 @@ section {
 }
 
 .process-layout {
-    display: grid;
-    grid-template-columns: 1fr .45fr;
-    gap: 20px;
-    align-items: start
+    display: block;
+    width: 100%
 }
 
 .process-flow {
     display: flex;
     flex-direction: column;
     gap: 0
-}
-
-.process-images {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    position: sticky;
-    top: 80px
-}
-
-.process-img-card {
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    background: var(--s1);
-    overflow: hidden;
-    transition: border-color .2s, transform .2s;
-    position: relative
-}
-
-.process-img-card:hover {
-    border-color: rgba(45, 255, 110, .15);
-    transform: translateY(-2px)
-}
-
-.process-img-thumb {
-    width: 100%;
-    aspect-ratio: 16/10;
-    background: linear-gradient(135deg, var(--s2), var(--s3));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden
-}
-
-.process-img-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    inset: 0
-}
-
-.process-img-thumb img[src=""] {
-    opacity: 0
-}
-
-.process-img-label {
-    padding: 10px 14px;
-    font-family: 'Fira Code', monospace;
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--tx3);
-    text-transform: uppercase;
-    letter-spacing: .8px;
-    border-top: 1px solid var(--line)
 }
 
 .process-step {
@@ -2111,9 +2068,8 @@ section {
 
 .port-media {
     width: 100%;
-    flex: 1 1 auto;
-    min-height: max(180px, calc(0px + var(--media-min-h, 200px)));
-    background: linear-gradient(135deg, var(--s2), var(--s3));
+    aspect-ratio: 16 / 9;
+    background: #0d1117;
     border-bottom: 1px solid var(--line);
     display: flex;
     align-items: center;
@@ -2122,13 +2078,12 @@ section {
     overflow: hidden
 }
 
-.port-item.span8 .port-media,
-.port-item.span6 .port-media {
-    --media-min-h: 340px
-}
-
-.port-item.span4 .port-media {
-    --media-min-h: 240px
+.port-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block
 }
 
 .port-body {
@@ -4184,143 +4139,102 @@ footer {
     }
 
     .hero-grid {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 10px !important;
-        align-items: stretch
-    }
-
-    .hero-grid>div:first-child {
-        grid-column: 1/-1
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        align-items: stretch !important
     }
 
     .hero-profile {
-        display: flex !important;
-        margin: 0;
-        grid-column: 1;
-        order: unset;
-        min-width: 0;
-        max-width: none;
-        width: auto
+        display: block !important;
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 480px !important
     }
 
     .hero-roblox-img {
-        display: flex !important;
-        grid-column: 2;
-        order: unset;
-        min-width: 0;
-        width: auto;
-        align-items: stretch
-    }
-
-    .hero-profile,
-    .hero-roblox-img {
-        overflow: hidden
+        display: block !important;
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 480px !important
     }
 
     .hero-profile .profile-card {
-        padding: 14px 10px;
-        width: 100%;
-        height: 100%
+        padding: 20px 16px;
+        width: 100%
     }
 
     .hero-profile .profile-name {
-        font-size: 14px
+        font-size: 18px
     }
 
     .hero-profile .profile-handle {
-        font-size: 8px
+        font-size: 10px
     }
 
     .hero-profile .role-tag {
-        font-size: 8px;
-        padding: 3px 6px;
-        gap: 4px
+        font-size: 10px;
+        padding: 5px 10px;
+        gap: 6px
     }
 
     .hero-profile .role-icon {
-        font-size: 11px;
-        width: 14px
+        font-size: 12px;
+        width: 16px
     }
 
     .hero-profile .profile-avatar-wrap {
-        width: 50px;
-        height: 50px;
-        margin: 4px auto 8px
+        width: 75px;
+        height: 75px;
+        margin: 6px auto 10px
     }
 
     .hero-profile .profile-avatar {
-        width: 50px;
-        height: 50px
+        width: 75px;
+        height: 75px
     }
 
     .hero-profile .profile-ring {
-        animation: none
+        animation: profileSpin 8s linear infinite
     }
 
     .hero-profile .profile-stats-row {
-        padding: 6px 0;
-        margin-top: 8px;
-        flex-direction: column;
-        gap: 4px
+        padding: 10px 0;
+        margin-top: 10px;
+        flex-direction: row;
+        gap: 0
     }
 
     .hero-profile .profile-stat-num {
-        font-size: 13px
+        font-size: 16px
     }
 
     .hero-profile .profile-stat-lbl {
-        font-size: 6px
+        font-size: 8px
     }
 
     .hero-profile .profile-stat-divider {
-        height: 1px;
-        width: 30px;
-        background: rgba(255, 255, 255, .06)
+        height: 20px;
+        width: 1px;
+        background: var(--line)
     }
 
     .hero-profile .btn-neon {
-        font-size: 10px;
-        padding: 7px 10px;
-        margin-top: 8px
+        font-size: 12px;
+        padding: 9px 14px;
+        margin-top: 10px
     }
 
     .hero-profile .profile-status-dot {
-        width: 10px;
-        height: 10px;
-        border-width: 2px;
-        bottom: 2px;
-        right: 2px
+        width: 12px;
+        height: 12px;
+        border-width: 2.5px;
+        bottom: 3px;
+        right: 3px
     }
 
     .hero-profile .profile-roles {
-        gap: 3px
-    }
-
-    .hero-roblox-img .roblox-img-card {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column
-    }
-
-    .hero-roblox-img .roblox-img-area {
-        flex: 1;
-        aspect-ratio: auto;
-        min-height: 0
-    }
-
-    .hero-roblox-img .roblox-img-area img {
-        object-position: 33% top
-    }
-
-    .hero-roblox-img .roblox-img-label {
-        padding: 8px 10px
-    }
-
-    .hero-roblox-img .roblox-img-label .badge {
-        font-size: 8px;
-        padding: 3px 8px
+        gap: 6px
     }
 
     .hero-grid>div:first-child {
