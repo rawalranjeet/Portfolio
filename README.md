@@ -14,4 +14,4 @@ Personal Portfolio Website of **Ranjeet Kumar**, Python Backend & Full-Stack Dev
 - `script.js` — Client-side interactivity, Python intro typewriter & form handlers
 - `PROFILE.jpg` — Developer profile photo
 - `project_*.png` — Portfolio project showcase assets
-- `Ranjeet_Resume_2026.docx.pdf` — Resume PDF document
+- `Ranjeet_Resume_2026.pdf` — Resume PDF document

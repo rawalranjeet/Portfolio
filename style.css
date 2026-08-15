@@ -3935,12 +3935,7 @@ footer {
     }
 
     .hero {
-        padding: 28px 0 40px
-    }
-
-    .hero-profile {
-        max-width: 360px;
-        margin: 0 auto
+        padding: 24px 0 40px
     }
 
     .grid-2,
@@ -4014,29 +4009,38 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 10px
     }
-}
-
-@media(max-width:600px) {
     .wrap {
         padding: 0 16px
     }
 
     .hero {
-        padding: 20px 0 36px
+        padding: 16px 0 32px
     }
 
-    .hero>div>.wrap>.hero-grid>div:first-child {
+    .hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+        align-items: stretch !important
+    }
+
+    .hero-grid>div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         text-align: center
     }
 
     .hero h1 {
-        font-size: clamp(38px, 11vw, 56px) !important;
-        margin: 16px 0 !important;
-        text-align: center
+        font-size: clamp(26px, 7.5vw, 40px) !important;
+        margin: 12px 0 !important;
+        text-align: center;
+        line-height: 1.15
     }
 
     .hero-desc {
-        font-size: 14px !important;
+        font-size: 13px !important;
+        line-height: 1.6;
         max-width: 100% !important;
         text-align: center;
         margin-left: auto;
@@ -4044,10 +4048,11 @@ footer {
     }
 
     .hero-tagline {
-        font-size: 11px !important;
-        letter-spacing: 2px !important;
-        margin-bottom: 14px !important;
+        font-size: clamp(9px, 2.5vw, 11px) !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 12px !important;
         text-align: center;
+        line-height: 1.5;
         display: block
     }
 
@@ -4062,73 +4067,60 @@ footer {
         display: inline-flex
     }
 
-    .hero-profile {
-        max-width: 100%;
-        margin: 20px auto 0
-    }
-
     .hero-trust-split {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        align-items: stretch;
-        margin-bottom: 12px;
-        width: 95%;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 14px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        order: 35;
-        direction: rtl
-    }
-
-    .hero-trust-split>* {
         direction: ltr
     }
 
+    .hero-trust-split>* {
+        direction: ltr;
+        width: 100%
+    }
+
     .trust-row {
+        display: flex !important;
         flex-direction: column !important;
-        gap: 5px !important;
+        gap: 8px !important;
+        width: 100% !important;
         margin-bottom: 0 !important
     }
 
     .trust-item {
-        padding: 8px 10px;
-        font-size: 10px;
-        justify-content: flex-start;
+        padding: 9px 12px;
+        font-size: 11px;
+        justify-content: center;
         width: 100%
     }
 
-    .hero-mini-card {
-        display: flex !important;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-        padding: 14px 10px;
-        border-radius: 12px;
-        border: 1px solid var(--line);
-        background: var(--s1)
-    }
+
 
     .hero-actions {
-        flex-direction: row;
-        gap: 6px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 16px
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+        margin-bottom: 14px
     }
 
     .hero-actions .btn {
-        white-space: nowrap;
+        width: 100% !important;
+        justify-content: center !important;
         text-align: center;
-        padding: 10px 14px;
-        font-size: 12px;
-        flex: 0 1 auto
+        padding: 12px 16px;
+        font-size: 13px
     }
 
     .terminal {
         max-width: 100%;
         overflow: hidden;
-        font-size: 11px !important;
+        font-size: 10px !important;
         margin: 0 auto;
         display: flex;
         justify-content: center
@@ -4138,25 +4130,11 @@ footer {
         text-align: center
     }
 
-    .hero-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-        align-items: stretch !important
-    }
-
     .hero-profile {
         display: block !important;
-        margin: 0 auto;
+        margin: 10px auto 0;
         width: 100% !important;
-        max-width: 480px !important
-    }
-
-    .hero-roblox-img {
-        display: block !important;
-        margin: 0 auto;
-        width: 100% !important;
-        max-width: 480px !important
+        max-width: 380px !important
     }
 
     .hero-profile .profile-card {
@@ -4165,28 +4143,28 @@ footer {
     }
 
     .hero-profile .profile-name {
-        font-size: 18px
+        font-size: 20px
     }
 
     .hero-profile .profile-handle {
-        font-size: 10px
+        font-size: 11px
     }
 
     .hero-profile .role-tag {
-        font-size: 10px;
-        padding: 5px 10px;
-        gap: 6px
+        font-size: 11px;
+        padding: 7px 12px;
+        gap: 8px
     }
 
     .hero-profile .role-icon {
-        font-size: 12px;
-        width: 16px
+        font-size: 13px;
+        width: 18px
     }
 
     .hero-profile .profile-avatar-wrap {
         width: 75px;
         height: 75px;
-        margin: 6px auto 10px
+        margin: 4px auto 12px
     }
 
     .hero-profile .profile-avatar {
@@ -4206,11 +4184,11 @@ footer {
     }
 
     .hero-profile .profile-stat-num {
-        font-size: 16px
+        font-size: 17px
     }
 
     .hero-profile .profile-stat-lbl {
-        font-size: 8px
+        font-size: 8.5px
     }
 
     .hero-profile .profile-stat-divider {
@@ -4221,7 +4199,7 @@ footer {
 
     .hero-profile .btn-neon {
         font-size: 12px;
-        padding: 9px 14px;
+        padding: 10px 14px;
         margin-top: 10px
     }
 
@@ -4244,34 +4222,34 @@ footer {
     }
 
     .hero-grid>div:first-child .hero-status-el {
-        order: 70
+        order: 1
     }
 
     .hero-grid>div:first-child h1 {
-        order: 10
+        order: 2
     }
 
     .hero-grid>div:first-child .hero-tagline {
-        order: 20
+        order: 3
     }
 
     .hero-grid>div:first-child .hero-desc {
-        order: 30;
+        order: 4;
         margin-bottom: 0 !important
     }
 
-    .hero-grid>div:first-child .trust-row {
-        order: 40;
+    .hero-grid>div:first-child .hero-trust-split {
+        order: 5;
+        margin-bottom: 0 !important
+    }
+
+    .hero-grid>div:first-child .hero-actions {
+        order: 6;
         margin-bottom: 0 !important
     }
 
     .hero-grid>div:first-child .reveal.rv-l:not(.hero-status-el) {
-        order: 50
-    }
-
-    .hero-grid>div:first-child .hero-actions {
-        order: 60;
-        margin-bottom: 0 !important
+        order: 7
     }
 
     section {

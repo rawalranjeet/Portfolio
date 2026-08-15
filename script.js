@@ -325,7 +325,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const ce = document.getElementById('copyEmail');
     if (ce) { ce.addEventListener('click', () => { const txt = 'rawalranjeet765@gmail.com'; if (navigator.clipboard) { navigator.clipboard.writeText(txt).then(() => { ce.textContent = '✓ Copied!'; setTimeout(() => { ce.innerHTML = '&#128203; Copy Email'; }, 1500); }); } else { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); ce.textContent = '✓ Copied!'; setTimeout(() => { ce.innerHTML = '&#128203; Copy Email'; }, 1500); } }); }
     const dcv = document.getElementById('downloadCV');
-    if (dcv) { dcv.addEventListener('click', e => { e.preventDefault(); window.open('Ranjeet_Resume_2026.docx.pdf', '_blank'); }); }
+    if (dcv) { dcv.addEventListener('click', e => { e.preventDefault(); window.open('Ranjeet_Resume_2026.pdf', '_blank'); }); }
     const ghb = document.getElementById('ghb');
     if (ghb) { ghb.addEventListener('click', e => { e.preventDefault(); window.open('https://github.com/rawalranjeet', '_blank'); }); }
     const lnk = document.getElementById('lnk');
